@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "EvenOrOdd_EnvIr0n"
+version = "1"
+authors = [
+  { name="EnvIr0n", email="envir0n@proton.me" },
+]
+description = "Checks if a int is even or odd (In a 40M lines of code kinda way)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/envopentech/EvenOrOdd"
+Issues = "https://github.com/envopentech/EvenOrOdd/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ['src/build.py','src/EOO.py']
